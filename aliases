@@ -1,1 +1,4 @@
-alias sync_metro="git_pull.sh ~/projects/metro"
+PROJECT_DIR="~/projects/metro"
+alias sync_project="sync_project $PROJECT_DIR"
+alias project="cd $PROJECT_DIR"
+alias project_status="git_status $PROJECT_DIR"
