@@ -1,8 +1,8 @@
 dirs=($(find $1 -d 1 -type d))
 for dir in "${dirs[@]}"; do
-	echo $dir
-	if [ -n "$(ls -A $dir/.git)" ]
+	if [ -d "$dir/.git" ]
 	then
+		echo "Git pull on $dir"
 		cd $dir
 		git pull
 	fi
