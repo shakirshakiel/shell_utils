@@ -1,0 +1,1 @@
+alias sync_metro="git_pull.sh ~/projects/metro"
