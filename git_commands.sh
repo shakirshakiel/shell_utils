@@ -5,7 +5,7 @@ git_pull() {
 		then
 			echo "Git pull on $dir"
 			cd $dir
-			git pull
+			git pull --recurse-submodules
 		fi
 	done
 }
@@ -31,7 +31,7 @@ git_submodule_update() {
 			then
 				echo "Git submodule update on $dir"
 				cd $dir
-				git submodule update
+				git submodule update --remote --recursive
 			fi
 		fi
 	done

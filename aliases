@@ -1,4 +1,4 @@
 PROJECT_DIR="~/projects/metro"
-alias sync_project="sync_project $PROJECT_DIR"
 alias project="cd $PROJECT_DIR"
 alias project_status="git_status $PROJECT_DIR"
+alias project_sync="sync_project $PROJECT_DIR"
